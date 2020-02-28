@@ -8,4 +8,4 @@ Collection of important and useful coding tricks, tips and knowledge for people 
 [bashrc](bashrc.md) links to code snippets to make you more productive in the terminal.
 
 ## Python
-[Knowledge Dump](python/knowldege_dump.md) Contains random tidbits of knowledge about python code and theory.
+[Knowledge Dump](python/knowledge_dump.md) Contains random tidbits of knowledge about python code and theory.
