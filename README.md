@@ -15,7 +15,7 @@ https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
 * Optional: Prettify your commit history `git rebase -i HEAD~3`. Change number to the amount of commits you want to squash. You can view the history to decide how many you want to rework by looking at `git log origin/master`.
 * Rewrite origin's history `git push origin master --force` 
 * initiate PR on github
-* Optional: If your PR got a change request, and you did your updates and are ready to redo the above steps, you can first view if the upstream master has since been updated with `git log HEAD..upstream/master`. This shows the commits in upstream that are not in your current origin. Note: regardless of changes in upstream, you can directly push to your PR branch with `git push -u origin master`.
+* Optional: If your PR got a change request, and you did your updates and are ready to redo the above steps, you can first view if the upstream master has since been updated with `git log HEAD..upstream/master`. This shows the commits in upstream that are not in your current origin. Note: regardless of changes in upstream, you can directly push to your PR branch with `git push origin master`.
 
 ## other
 
