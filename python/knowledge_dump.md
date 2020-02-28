@@ -2,10 +2,10 @@
 
 ## Basics
 
-* `arr[::-1]` uses start:end:step  to return the array in reverse order
+* `arr[::-1]` uses `start:end:step`  to return the array in reverse order
 * `range(start, stop, hop)`
 * `list [:]` creates a copy
-* `map(lambda x: str(x), arr)`  Output: ['1','2','3']
+* `map(lambda x: str(x), arr)`  Output: `['1','2','3']`
 * `float(“inf”)` and `float(“-inf”)` for initializing a far bigger and smaller value
 * String formatting https://pyformat.info/
 
