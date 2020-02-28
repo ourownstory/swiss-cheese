@@ -17,5 +17,9 @@ https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
 * initiate PR on github
 * Optional: If your PR got a change request, and you did your updates and are ready to redo the above steps, you can first view if the upstream master has since been updated with `git log HEAD..upstream/master`. This shows the commits in upstream that are not in your current origin.
 
+## other
+
+* If you want to overwrite your local branch with a remote branch `git reset --hard origin/master`
+
 ## .bashrc
 
