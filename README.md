@@ -1,4 +1,4 @@
-# swiss-cheese
+# Swiss Cheese Brain
 Collection of important and useful coding tricks, tips and knowledge for people with a memory like Swiss cheese.
 
 ## Git Best Practices
@@ -6,3 +6,6 @@ Collection of important and useful coding tricks, tips and knowledge for people 
 
 ## .bashrc basics and hacks
 [bashrc](bashrc.md) links to code snippets to make you more productive in the terminal.
+
+## Python
+[Knowledge Dump](python/knowldege_dump.md) Contains random tidbits of knowledge about python code and theory.
