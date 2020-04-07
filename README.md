@@ -1,5 +1,5 @@
 # Swiss Cheese Brain
-Collection of important and useful coding tricks, tips and knowledge for people with a memory like Swiss cheese.
+Collection of important and useful coding tricks, tips and knowledge for people with a memory like Swiss cheese (it's only qualification being full of holes).
 
 ## Git Best Practices
 [git_best_practices](git_best_practices.md) covers contributing to a public repo and some git magic.
