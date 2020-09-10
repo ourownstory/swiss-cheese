@@ -8,7 +8,7 @@ https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
 
 * When rebasing based on remote repo: (assuming you added remote forked repo as upstream `git remote add upstream git@github.com:user/repo.git`)
 * Do all your work, commit it and stash the rest. Push to origin `git push -u origin master`
-* Optional: To be save, make a copy of the current state of your origin/master before rebasing `git checkout -b origin/copy_master origin/master`
+* Optional: To be safe, make a copy of the current state of your origin/master before rebasing `git checkout -b origin/copy_master origin/master`
 * Update upstream `git fetch upstream`
 * Rebase with upstream `git rebase upstream/master`
 * Optional: Prettify your commit history `git rebase -i HEAD~3`. Change number to the amount of commits you want to squash. You can view the history to decide how many you want to rework by looking at `git log origin/master`.
