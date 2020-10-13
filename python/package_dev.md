@@ -2,6 +2,21 @@
 ## `setup.py`
 https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
 
+automatically add README.md to PyPI long description:
+```python
+# read the contents of your README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    readme = f.read()
+
+setuptools.setup(
+    # other arguments omitted
+    long_description=readme,
+    long_description_content_type='text/markdown'
+)
+```
+
 ## `__init__.py`
 From: https://stackoverflow.com/questions/448271/what-is-init-py-for
 There are 2 main reasons for `__init__.py`
