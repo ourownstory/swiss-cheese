@@ -1,5 +1,5 @@
 # git aliases
-alias gs="git status"
+alias gits="git status"
 alias gco="git checkout"
 #alias gca="git commit -am"
 alias gcm="git commit -m"
