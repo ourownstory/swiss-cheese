@@ -1,7 +1,7 @@
 # git aliases
 alias gits="git status"
 alias gco="git checkout"
-#alias gca="git commit -am"
+#alias gcam="git commit -am"
 alias gcm="git commit -m"
 
 # some more ls aliases
