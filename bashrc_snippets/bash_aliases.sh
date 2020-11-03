@@ -16,4 +16,4 @@ alias ssh_aws="ssh -i "~/../keyfile.pem" ec2-user@xx.xxx.xxx.xxx"
 alias jupyter_aws="ssh -i "~/../keyfile.pem" -L 8888:localhost:8888 ec2-user@xx.xxx.xxx.xxx"
 
 # venv aliases
-alias venvxxx="source ~/venv/xxx/bin/activate"
+alias v-xxx="source ~/venv/xxx/bin/activate"
