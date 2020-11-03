@@ -20,11 +20,3 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ -f ~/.py_mods ]; then
-    . ~/.py_mods
-fi
-
-# add hacks specific to your device
-if [ -f ~/.surface_hacks ]; then
-    . ~/.surface_hacks
-fi
