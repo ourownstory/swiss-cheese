@@ -57,3 +57,39 @@ There are 2 main reasons for `__init__.py`
   import logging.config
   logging.config.dictConfig(Your_logging_config)
   ```
+  
+## Release a package to PYPI
+[Real Python Guide](https://realpython.com/pypi-publish-python-package/)
+
+When just updating a new version:
+```python
+pip install twine
+python setup.py sdist bdist_wheel
+tar tzf dist/<packagename.1.0.0.tar.gz>
+```
+Check if tarball contains what you expect.
+And then another check:
+```python
+twine check dist/*
+```
+Test upload:
+```python
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+```
+Check the page, is the version number and everything else right?
+
+Create a new virtualenv and install the package from test.pypi:
+```python
+python -m pip install --extra-index-url https://test.pypi.org/simple/ <packagename>
+```
+Check if it works.
+
+Finally, actually upload it:
+```python
+twine upload dist/*
+```
+Enjoy (and test again): 
+
+```python
+ pip install <your-package-name>
+```
