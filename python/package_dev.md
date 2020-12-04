@@ -59,9 +59,8 @@ There are 2 main reasons for `__init__.py`
   ```
   
 ## Release a package to PYPI
-[Real Python Guide](https://realpython.com/pypi-publish-python-package/)
+Assuming you already have your code (incl. setup.py) set up. If not, read this [Real Python Guide](https://realpython.com/pypi-publish-python-package/) first.
 
-When just updating a new version:
 ```python
 pip install twine
 python setup.py sdist bdist_wheel
