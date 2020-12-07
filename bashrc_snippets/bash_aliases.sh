@@ -16,4 +16,15 @@ alias ssh_aws="ssh -i "~/../keyfile.pem" ec2-user@xx.xxx.xxx.xxx"
 alias jupyter_aws="ssh -i "~/../keyfile.pem" -L 8888:localhost:8888 ec2-user@xx.xxx.xxx.xxx"
 
 # venv aliases
-alias v-xxx="source ~/venv/xxx/bin/activate"
+v(){
+        # use: $ v myenvname
+        source ~/venv/$1/bin/activate
+}
+
+v-reset(){
+        # delete and recreate venv
+        rm -r ~/venv/$1
+        python3 -m venv ~/venv/$1
+        source ~/venv/$1/bin/activate
+}
+
