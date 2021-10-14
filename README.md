@@ -21,3 +21,6 @@ Collection of useful and silly coding tricks, tips and knowledge for people with
 
 ## Open Source Project Development
 consider using scripts like https://github.com/github/scripts-to-rule-them-all
+
+### documentation
+using mkdocs with github pages: https://www.mkdocs.org/user-guide/deploying-your-docs/
