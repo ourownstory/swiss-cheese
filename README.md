@@ -12,3 +12,9 @@ Collection of useful and silly coding tricks, tips and knowledge for people with
 
 ### Package development
 [Resources for developing an open-source package](python/knowledge_dump.md)
+
+### git submodules
+When in need of source code files from another project. Read https://github.blog/2016-02-01-working-with-submodules/
+
+## Open Source Project Development
+consider using scripts like https://github.com/github/scripts-to-rule-them-all
