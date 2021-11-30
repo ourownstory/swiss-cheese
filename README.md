@@ -15,7 +15,7 @@ Collection of useful and silly coding tricks, tips and knowledge for people with
 [Knowledge Dump](python/knowledge_dump.md) Contains random tidbits of knowledge about python code and theory.
 
 ### Package development
-[Resources for developing an open-source package](python/knowledge_dump.md)
+[Resources for developing an open-source package](python/package_dev.md)
 
 
 
