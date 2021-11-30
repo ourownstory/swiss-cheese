@@ -64,7 +64,7 @@ Assuming you already have your code (incl. setup.py) set up. If not, read this [
 ```python
 pip install twine
 python setup.py sdist bdist_wheel
-tar tzf dist/packagename.1.0.0.tar.gz
+tar tzf dist/packagename-1.0.0.tar.gz
 ```
 Check if tarball contains what you expect.
 And then another check:
