@@ -30,3 +30,7 @@ consider using scripts like https://github.com/github/scripts-to-rule-them-all
 * use the Sphinx documentation framework to build the documentation website, which is hosted via Github Pages. (Details: The documentation's source is enclosed in the docs folder. Whereas the main branch only contains the basic source files, the branch gh-pages entails the build data (with folders docs/html and docs/doctrees) and is used for deployment.)
 * Docstrings: format according to [NumPy Style](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html#example-numpy) in order to display their API reference correctly using Spinx. Please refer to [Pandas Docstring Guide](https://pandas.pydata.org/pandas-docs/stable/development/contributing_docstring.html#) for best practices. The length of line inside docstrings block must be limited to 80 characters to fit into Jupyter documentation popups.
 * Jupyter notebooks: render using the Sphinx nblink package. (Details: When you add a new tutorial notebook, please add the tutorial file to the respective section inside docs/source/contents.rst. Further, generate the corresponding .nblink files)
+
+### Resources
+* Principles for documentation structure: https://documentation.divio.com/
+* Great Readme: https://dbader.org/blog/write-a-great-readme-for-your-github-project
