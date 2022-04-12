@@ -2,6 +2,9 @@
 Collection of useful and silly coding tricks, tips and knowledge for people with a memory like Swiss cheese (it's only qualification being: full of holes).
 
 ## Git 
+### ELI5
+https://hackernoon.com/understanding-git-fcffd87c15a3
+
 ### Best Practices
 [git_best_practices](git_best_practices.md) covers contributing to a public repo and some git magic.
 
