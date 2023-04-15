@@ -1,21 +1,4 @@
 # Developing Python packages
-## `setup.py`
-https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
-
-automatically add README.md to PyPI long description:
-```python
-# read the contents of your README file
-from os import path
-this_directory = path.abspath(path.dirname(__file__))
-with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
-    readme = f.read()
-
-setuptools.setup(
-    # other arguments omitted
-    long_description=readme,
-    long_description_content_type='text/markdown'
-)
-```
 
 ## `__init__.py`
 From: https://stackoverflow.com/questions/448271/what-is-init-py-for
@@ -58,7 +41,25 @@ There are 2 main reasons for `__init__.py`
   logging.config.dictConfig(Your_logging_config)
   ```
   
-## Release a package to PYPI
+## Using Setuptools aka `setup.py`
+https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
+
+automatically add README.md to PyPI long description:
+```python
+# read the contents of your README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    readme = f.read()
+
+setuptools.setup(
+    # other arguments omitted
+    long_description=readme,
+    long_description_content_type='text/markdown'
+)
+```
+  
+## Release a package to PYPI with setuptools
 Assuming you already have your code (incl. setup.py) set up. If not, read this [Real Python Guide](https://realpython.com/pypi-publish-python-package/) first.
 
 ```python
@@ -92,3 +93,7 @@ Enjoy (and test again):
 ```python
  pip install <your-package-name>
 ```
+
+## Release a package to PYPI with poetry
+https://www.digitalocean.com/community/tutorials/how-to-publish-python-packages-to-pypi-using-poetry-on-ubuntu-22-04
+
