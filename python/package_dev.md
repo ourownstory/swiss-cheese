@@ -95,5 +95,14 @@ Enjoy (and test again):
 ```
 
 ## Release a package to PYPI with poetry
+One-time setup: Create an API token for PyPI and add it to poetry. Guide:
 https://www.digitalocean.com/community/tutorials/how-to-publish-python-packages-to-pypi-using-poetry-on-ubuntu-22-04
+
+Publishing procedure:
+```
+poetry build
+```
+```
+poetry publish
+```
 
