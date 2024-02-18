@@ -98,14 +98,14 @@ We can simply copy all the contents from our initial pyproject.toml, and add the
 We then need to delete the pre-existing `[build-system]` section that is referring to `setuptools`.
 In fact, we can delete all other `[tool.setuptools.xyz]` sections, as well.
 
-Then we can deal with the `[project]` sections:
+Then we deal with the `[project]` sections:
 The main `[project]` section can be deleted (or merged) as we replaced it with our `[tool.poetry]` section.
 The `[project.scripts]` section we can simply rename to `[tool.poetry.scripts]`.
-We also rename `[project.entry-points."kedro.hooks"]` to `[tool.poetry.plugins."kedro.hooks"]` (Note: Not certain that this is correct though.)
+We also rename `[project.entry-points."kedro.hooks"]` to `[tool.poetry.plugins."kedro.hooks"]`.
 
-Further, we need to add any further required packages, that the template had defined in `projectname/requirements.txt` to our new `[tool.poetry.dependencies]` section.
+Further, we need to add any required packages, which the template had defined in `projectname/requirements.txt` to our new `[tool.poetry.dependencies]` section.
 
-Now, our `projectname/pyproject.toml` file looks like this:
+Finally, our `projectname/pyproject.toml` file looks like this:
 ```
 [build-system]
 requires = ["poetry-core"]
@@ -140,9 +140,9 @@ source_dir = "src"
 ```
 And that's all the heavy editing. 
 
-Finally, we can clean up and  delete `projectname/requirements.txt` and the `pyproject.toml` and `poetry.lock` files in the project root directory.
+We wrap up the conversion process by deleting `projectname/requirements.txt` and the `pyproject.toml` and `poetry.lock` files in the project root directory.
 
-We `cd projectname` and re-run `poetry update` to re-initialize the poetry.lock file and install all the required packages. 
+Finally, we `cd projectname` and re-run `poetry update` to re-initialize the poetry.lock file and install all the required packages. 
 
 With `kedro info` we can check if all is well.
 
