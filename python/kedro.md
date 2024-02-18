@@ -142,6 +142,6 @@ source_dir = "src"
 ```
 And that's all the heavy editing. 
 
-Finally, we can clean up and  delete the poetry.lock in the project root directory.
+Finally, we can clean up and  delete the `pyproject.toml` and `poetry.lock` files in the project root directory.
 
 
