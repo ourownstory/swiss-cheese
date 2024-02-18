@@ -31,5 +31,5 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-kedro = "19.2"
+kedro = "0.19.2"
 ```
