@@ -56,3 +56,7 @@ Assuming we called the project `projectname`, and said no to all other options, 
 
 8 directories, 14 files
 ```
+Now we just have to clean up and convert the `pyproject.toml` from `setuptools` to `poetry`.
+We can delete the poetry.lock in the project root directory.
+Then, we want to transfer our root `pyproject.toml` contents to the kedro-generated `projectname/pyproject.toml`
+
