@@ -66,9 +66,7 @@ Assuming we called the project `projectname`, and said no to all other options, 
 8 directories, 14 files
 ```
 
-Now, the manual work of **converting the `pyproject.toml` from `setuptools` to `poetry`** begins.
 Our new, kedro-generated `projectname/pyproject.toml` looks like this:
-
 ```
 [build-system]
 requires = [ "setuptools",]
@@ -102,6 +100,9 @@ attr = "projectname.__version__"
 where = [ "src",]
 namespaces = false
 ```
+
+## Converting from `setuptools` to `poetry`
+Now, the manual work of converting `pyproject.toml` from `setuptools` to `poetry` begins.
 
 We can simply copy all the contents from our initial pyproject.toml, and add them in on the top. 
 We then need to delete the pre-existing `[build-system]` section that is referring to `setuptools`.
