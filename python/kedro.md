@@ -142,6 +142,7 @@ source_dir = "src"
 [project.entry-points."kedro.hooks"]
 ```
 And that's all the heavy editing. 
-(Oh, I am not sure about that last line though.)
+
+Finally, we can clean up and  delete the poetry.lock in the project root directory.
 
 
