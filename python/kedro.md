@@ -112,7 +112,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "projectname"
+name = "package-name"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <name@you.com>"]
@@ -123,9 +123,8 @@ python = "^3.10"
 kedro = "0.19.2"
 ipython = ">=8.10"
 jupyterlab = ">=3.0"
-kedro = "0.19.2"
 kedro-telemetry = ">=0.3.1"
-notebook
+notebook = ">=7.1.0"
 
 [tool.poetry.scripts]
 projectname = "projectname.__main__:main"
