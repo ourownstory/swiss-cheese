@@ -22,11 +22,20 @@ kedro = "0.19.2"
 ```
 
 Now we can create a poetry virtual environment:
-`poetry shell`
+```
+poetry shell
+```
+
 And then install our packages, in this case just kedro:
-`poetry update`
+```
+poetry update
+```
+
 Next, we can set up Kedro, which will prompt us to give the project a name and few more options:
-`kedro new`
+```
+kedro new
+```
+
 Assuming we called the project `projectname`, and said no to all other options, we end up with these folders and files:
 ```
 > tree
@@ -142,9 +151,16 @@ And that's all the heavy editing.
 
 We wrap up the conversion process by deleting `projectname/requirements.txt` and the `pyproject.toml` and `poetry.lock` files in the project root directory.
 
-Finally, we `cd projectname` and re-run `poetry update` to re-initialize the poetry.lock file and install all the required packages. 
+Finally, we re-run poetry update to re-initialize the poetry.lock file and install all the required packages. 
+```
+cd projectname
+poetry update
+```
 
-With `kedro info` we can check if all is well.
+We can check if all is well with:
+```
+kedro info
+```
 
 
 
