@@ -146,7 +146,7 @@ tools = [ "None",]
 example_pipeline = "False"
 source_dir = "src"
 
-[project.entry-points."kedro.hooks"]
+[tool.poetry.plugins."kedro.hooks"]
 ```
 And that's all the heavy editing. 
 
