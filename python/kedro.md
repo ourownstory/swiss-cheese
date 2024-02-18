@@ -10,7 +10,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "package-name"
+name = "projectname"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <name@you.com>"]
@@ -99,7 +99,12 @@ We can simply copy all the contents from our initial pyproject.toml, and add the
 We then need to delete the pre-existing `[build-system]` section that is referring to `setuptools`.
 In fact, we can delete all other `[tool.setuptools.xyz]` sections, as well.
 
-Finally, we need to add any further required packages, that the template had defined in `projectname/requirements.txt` to our new `[tool.poetry.dependencies]` section.
+Then we can deal with the `[project]` sections:
+The main `[project]` section can be deleted (or merged) as we replaced it with our `[tool.poetry]` section.
+The `[project.scripts]` section we can simply rename to `[tool.poetry.scripts]`.
+We also rename `[project.entry-points."kedro.hooks"]` to `[tool.poetry.plugins."kedro.hooks"]` (Note: Not certain that this is correct though.)
+
+Further, we need to add any further required packages, that the template had defined in `projectname/requirements.txt` to our new `[tool.poetry.dependencies]` section.
 
 Now, our `projectname/pyproject.toml` file looks like this:
 ```
@@ -108,7 +113,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "package-name"
+name = "projectname"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <name@you.com>"]
@@ -123,12 +128,7 @@ kedro = "0.19.2"
 kedro-telemetry = ">=0.3.1"
 notebook
 
-[project]
-name = "projectname"
-readme = "README.md"
-dynamic = [ "dependencies", "version",]
-
-[project.scripts]
+[tool.poetry.scripts]
 projectname = "projectname.__main__:main"
 
 [tool.kedro]
@@ -141,5 +141,7 @@ source_dir = "src"
 
 [project.entry-points."kedro.hooks"]
 ```
+And that's all the heavy editing. 
+(Oh, I am not sure about that last line though.)
 
 
