@@ -35,5 +35,5 @@ consider using scripts like https://github.com/github/scripts-to-rule-them-all
 * Jupyter notebooks: render using the Sphinx nblink package. (Details: When you add a new tutorial notebook, please add the tutorial file to the respective section inside docs/source/contents.rst. Further, generate the corresponding .nblink files)
 
 ### Resources
-* Principles for documentation structure: https://documentation.divio.com/
+* Principles for documentation structure: https://diataxis.fr/
 * Great Readme: https://dbader.org/blog/write-a-great-readme-for-your-github-project
