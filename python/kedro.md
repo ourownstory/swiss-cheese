@@ -2,7 +2,7 @@
 
 There are different ways to do this, but as of Kedro 19.2, [kedro initializes with setuptools, not poetry](https://github.com/kedro-org/kedro/issues/1722#issuecomment-1839694525). But that is simple to fix.
 
-Assuming you want to use poetry's envs, too - we first have to set up a minimal poetry project.
+Assuming you want to use poetry's envs, too - we first have to set up a poetry project.
 All we need is a minimal `pyproject.toml`:
 ```
 [build-system]
