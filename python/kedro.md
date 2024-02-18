@@ -123,7 +123,6 @@ python = "^3.10"
 kedro = "0.19.2"
 ipython = ">=8.10"
 jupyterlab = ">=3.0"
-kedro-telemetry = ">=0.3.1"
 notebook = ">=7.1.0"
 
 [tool.poetry.scripts]
@@ -142,5 +141,10 @@ source_dir = "src"
 And that's all the heavy editing. 
 
 Finally, we can clean up and  delete `projectname/requirements.txt` and the `pyproject.toml` and `poetry.lock` files in the project root directory.
+
+We `cd projectname` and re-run `poetry update` to re-initialize the poetry.lock file and install all the required packages. 
+
+With `kedro info` we can check if all is well.
+
 
 
