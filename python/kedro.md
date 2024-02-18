@@ -57,7 +57,7 @@ Assuming we called the project `projectname`, and said no to all other options, 
 8 directories, 14 files
 ```
 
-Now main work of **converting the `pyproject.toml` from `setuptools` to `poetry`** begins.
+Now, the manual work of **converting the `pyproject.toml` from `setuptools` to `poetry`** begins.
 Our new, kedro-generated `projectname/pyproject.toml` looks like this:
 
 ```
