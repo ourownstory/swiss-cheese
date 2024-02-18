@@ -56,7 +56,90 @@ Assuming we called the project `projectname`, and said no to all other options, 
 
 8 directories, 14 files
 ```
-Now we just have to clean up and convert the `pyproject.toml` from `setuptools` to `poetry`.
+
+Now we just have to clean up and do the main work of **converting the `pyproject.toml` from `setuptools` to `poetry`**.
 We can delete the poetry.lock in the project root directory.
-Then, we want to transfer our root `pyproject.toml` contents to the kedro-generated `projectname/pyproject.toml`
+Then, we want to transfer our root `pyproject.toml` contents to the kedro-generated `projectname/pyproject.toml`, the latter looks like this:
+
+```
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "projectname"
+readme = "README.md"
+dynamic = [ "dependencies", "version",]
+
+[project.scripts]
+projectname = "projectname.__main__:main"
+
+[tool.kedro]
+package_name = "projectname"
+project_name = "projectname"
+kedro_init_version = "0.19.2"
+tools = [ "None",]
+example_pipeline = "False"
+source_dir = "src"
+
+[project.entry-points."kedro.hooks"]
+
+[tool.setuptools.dynamic.dependencies]
+file = "requirements.txt"
+
+[tool.setuptools.dynamic.version]
+attr = "projectname.__version__"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false
+```
+
+We can simply copy all the contents from our initial pyproject.toml, and add them in on the top. 
+We then need to delete the pre-existing `[build-system]` section that is referring to `setuptools`.
+In fact, we can delete all other `[tool.setuptools.xyz]` sections, as well.
+
+Finally, we need to add any further required packages, that the template had defined in `projectname/requirements.txt` to our new `[tool.poetry.dependencies]` section.
+
+Now, our `projectname/pyproject.toml` file looks like this:
+```
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "package-name"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <name@you.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+kedro = "0.19.2"
+ipython = ">=8.10"
+jupyterlab = ">=3.0"
+kedro = "0.19.2"
+kedro-telemetry = ">=0.3.1"
+notebook
+
+[project]
+name = "projectname"
+readme = "README.md"
+dynamic = [ "dependencies", "version",]
+
+[project.scripts]
+projectname = "projectname.__main__:main"
+
+[tool.kedro]
+package_name = "projectname"
+project_name = "projectname"
+kedro_init_version = "0.19.2"
+tools = [ "None",]
+example_pipeline = "False"
+source_dir = "src"
+
+[project.entry-points."kedro.hooks"]
+```
+
 
