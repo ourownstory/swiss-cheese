@@ -5,10 +5,6 @@ There are different ways to do this, but as of Kedro 19.2, [kedro initializes wi
 Assuming you want to use poetry's envs, too - we first have to set up a poetry project.
 All we need is a minimal `pyproject.toml`:
 ```
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.poetry]
 name = "projectname"
 version = "0.1.0"
@@ -19,6 +15,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 kedro = "0.19.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 ```
 
 Now we can create a poetry virtual environment (using this minimal pyproject.toml):
