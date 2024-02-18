@@ -117,10 +117,6 @@ Further, we need to add any required packages, which the template had defined in
 
 Finally, our `projectname/pyproject.toml` file looks like this:
 ```
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.poetry]
 name = "package-name"
 version = "0.1.0"
@@ -134,6 +130,10 @@ kedro = "0.19.2"
 ipython = ">=8.10"
 jupyterlab = ">=3.0"
 notebook = ">=7.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 projectname = "projectname.__main__:main"
