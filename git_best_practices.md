@@ -16,9 +16,21 @@ https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
 * initiate PR on github
 * Optional: If your PR got a change request, and you did your updates and are ready to redo the above steps, you can first view if the upstream master has since been updated with `git log HEAD..upstream/master`. This shows the commits in upstream that are not in your current origin. Note: regardless of changes in upstream, you can directly push to your PR branch with `git push origin master`.
 
-## other
+## reset local branch to origin
 
 * If you want to overwrite your local branch with a remote branch `git reset --hard origin/master`
 
 ## .gitignore
 https://labs.consol.de/development/git/2017/02/22/gitignore.html
+
+# Git Advanced Operations
+## git submodules
+When in need of source code files from another project. Read https://github.blog/2016-02-01-working-with-submodules/
+
+## split a subfolder into a new repo
+guide from github https://docs.github.com/en/get-started/using-git/splitting-a-subfolder-out-into-a-new-repository
+
+using filter-repo (recommended) https://github.com/newren/git-filter-repo
+
+guide guide using filter-branch (not recommended) https://manishearth.github.io/blog/2017/03/05/understanding-git-filter-branch/
+
