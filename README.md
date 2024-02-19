@@ -1,18 +1,9 @@
 # Swiss Cheese Brain
 Collection of useful and silly coding tricks, tips and knowledge for people with a memory like Swiss cheese (it's only qualification being: full of holes).
 
-## Git 
-### ELI5
-https://hackernoon.com/understanding-git-fcffd87c15a3
-
-### Best Practices
-[git_best_practices](git_best_practices.md) covers contributing to a public repo and some git magic.
-
-### Advanced Git Operations
-[git_advanced](git_advanced.md)
-
-## .bashrc basics and hacks
-[bashrc](bashrc.md) links to code snippets to make you more productive in the terminal.
+* [git: ELI5](https://hackernoon.com/understanding-git-fcffd87c15a3)
+* [git_best_practices](git_best_practices.md) covers contributing to a public repo and some git tricks.
+* [bashrc basics and hacks](bashrc_snippets/README.md) links to code snippets to make you more productive in the terminal.
 
 ## Python
 [Knowledge Dump](python/knowledge_dump.md) Contains random tidbits of knowledge about python code and theory.
