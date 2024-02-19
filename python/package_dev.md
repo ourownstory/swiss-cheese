@@ -1,4 +1,5 @@
 # Developing Python packages
+Note: consider using scripts like https://github.com/github/scripts-to-rule-them-all
 
 ## `__init__.py`
 From: https://stackoverflow.com/questions/448271/what-is-init-py-for
