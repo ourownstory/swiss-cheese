@@ -3,10 +3,6 @@
 * [Resources for developing an open-source package](python/package_dev.md)
 
 
-
-## Open Source Project Development
-consider using scripts like https://github.com/github/scripts-to-rule-them-all
-
 ## Documentation
 * using mkdocs with github pages: https://www.mkdocs.org/user-guide/deploying-your-docs/
 * using custom domain: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
