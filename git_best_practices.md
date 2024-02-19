@@ -19,3 +19,6 @@ https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
 ## other
 
 * If you want to overwrite your local branch with a remote branch `git reset --hard origin/master`
+
+## .gitignore
+https://labs.consol.de/development/git/2017/02/22/gitignore.html
