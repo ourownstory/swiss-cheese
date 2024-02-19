@@ -5,10 +5,6 @@ in this folder:
 * 
 * [Using Kedro with Poetry](kedro.md)
 
-## Managing python versions
-Great guide on how to install and manage multiple python versions on an ubuntu based OS: https://hackersandslackers.com/multiple-versions-python-ubuntu/
-
-
 ## Documentation
 * using mkdocs with github pages: https://www.mkdocs.org/user-guide/deploying-your-docs/
 * using custom domain: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
