@@ -1,7 +1,7 @@
 # Python
 in this folder:
-* [Knowledge Dump](python/knowledge_dump.md) Contains random tidbits of knowledge about python code and theory.
-* [Resources for developing an open-source package](python/package_dev.md)
+* [Knowledge Dump](knowledge_dump.md) Contains random tidbits of knowledge about python code and theory.
+* [Resources for developing an open-source package](package_dev.md)
 * 
 * [Using Kedro with Poetry](kedro.md)
 
