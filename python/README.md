@@ -1,6 +1,12 @@
 # Python
+in this folder:
 * [Knowledge Dump](python/knowledge_dump.md) Contains random tidbits of knowledge about python code and theory.
 * [Resources for developing an open-source package](python/package_dev.md)
+* 
+* [Using Kedro with Poetry](kedro.md)
+
+## Managing python versions
+Great guide on how to install and manage multiple python versions on an ubuntu based OS: https://hackersandslackers.com/multiple-versions-python-ubuntu/
 
 
 ## Documentation
