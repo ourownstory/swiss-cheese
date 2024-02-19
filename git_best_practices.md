@@ -1,4 +1,5 @@
 # Git Best Practices
+[git: ELI5](https://hackernoon.com/understanding-git-fcffd87c15a3)
 
 ## contribute to a public repo
 Good general guidelines and steps described:
